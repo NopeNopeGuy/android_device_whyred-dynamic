@@ -172,6 +172,9 @@ BOARD_VNDK_VERSION := current
 # Only needed for signing
 BOARD_AVB_ENABLE := false
 
+# Lineage Health HAL
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Wifi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
