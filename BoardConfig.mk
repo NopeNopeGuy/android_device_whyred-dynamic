@@ -17,6 +17,10 @@ BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := sdm660
 #TARGET_ENFORCES_QSSI := true
 
+# Creates metadata partition mount point under root for
+# the devices with metadata parition
+BOARD_USES_METADATA_PARTITION := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
