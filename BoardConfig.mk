@@ -58,8 +58,11 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/xiaomi/whyred/kernel/Image.gz-dtb
+TARGET_FORCE_PREBUILT_KERNEL := true
+BOARD_VENDOR_KERNEL_MODULES := device/xiaomi/whyred/kernel/wlan.ko 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := vendor/whyred-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/bouquet_defconfig whyred.config 
 TARGET_KERNEL_VERSION := 4.19
 
 # QCOM hardware
